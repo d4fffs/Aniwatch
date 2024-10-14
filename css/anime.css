@@ -141,13 +141,15 @@ nav{
     width: 100%;
     max-width: 600px;
     padding: 25px;
-    margin-left: 55vh;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
     display: flex;
     width: 100%;
     padding: 40px;
+    margin-left: 70%;
 }
 
 input[type="text"] {
@@ -171,7 +173,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
-/*List Anime*/
+/*Bagian Awal*/
 
 .text{
   margin-left: 5.5rem;
@@ -227,29 +229,90 @@ button:hover {
 .anime1 img{
   width: 227px;
   height: 327px;
+  border-radius: 15px;
 }
+.anime1 p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
 .anime2 img{
   width: 227px;
   height: 327px;
+  border-radius: 15px;
+}
+.anime2 p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
 }
 .ratingtertinggi{
   max-width: 50%;
   height: 100%;
-  gap: 30px;
 }
 .anime3{
   margin-left: 6rem;
+  gap: 30px;
   margin-top: 2rem;
+}
+.card1{
+  margin-bottom: 30px;
+}
+.card1 .cardtext{
+  display: flex;
+  justify-content: space-between;
+}
+.cardtext i{
+  margin-right: 5px;
+  color: yellow;
 }
 .anime3 img{
   width: 500px;
-  height: 218px;
+  height: 330px;
   object-fit: cover;
+  border-radius: 15px;
+}
+.anime3 p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.anime3 h1{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
 }
     
+/*Histori*/
+.history{
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  padding: 50px;
+}
 
-
-
+.text-history{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+.historynime{
+  display: flex;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+}
+.cardnime{
+  margin-right: 25px;
+}
+.cardnime img{
+  width: 250px;
+  height: 360px;
+  border-radius: 15px;
+}
+.cardnime p{
+  font-size: 20px;
+}
 
 /*Footer*/
 
