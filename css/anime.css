@@ -202,21 +202,50 @@ button:hover {
     font-size: 25px;
 }
 
+.container{
+  display: flex;
+}
+.animeterbaru{
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  height: 100%;
+}
 .anime1{
   display: flex;
   gap: 30px;
   margin-left: 8.5rem;
   margin-top: 2rem;
+}
+.anime2{
+  display: flex;
+  gap: 30px;
+  margin-left: 8.5rem;
+  margin-top: 2rem;
   max-width: 100%;
-
-
 }
 .anime1 img{
   width: 227px;
   height: 327px;
 }
-
-
+.anime2 img{
+  width: 227px;
+  height: 327px;
+}
+.ratingtertinggi{
+  max-width: 50%;
+  height: 100%;
+  gap: 30px;
+}
+.anime3{
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+.anime3 img{
+  width: 500px;
+  height: 218px;
+  object-fit: cover;
+}
     
 
 
