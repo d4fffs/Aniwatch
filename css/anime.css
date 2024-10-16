@@ -227,9 +227,15 @@ button:hover {
   max-width: 100%;
 }
 .anime1 img{
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
   width: 227px;
   height: 327px;
   border-radius: 15px;
+}
+.anime1 img:hover{
+  width: 247px;
+  height: 347px;
 }
 .anime1 p{
   font-size: 20px;
@@ -238,9 +244,15 @@ button:hover {
 }
 
 .anime2 img{
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
   width: 227px;
   height: 327px;
   border-radius: 15px;
+}
+.anime2 img:hover{
+  width: 247px;
+  height: 347px;
 }
 .anime2 p{
   font-size: 20px;
@@ -268,10 +280,15 @@ button:hover {
   color: yellow;
 }
 .anime3 img{
+  transition: all ease-in-out 0.2s;
   width: 500px;
   height: 330px;
   object-fit: cover;
   border-radius: 15px;
+}
+.anime3 img:hover{
+  width: 520px;
+  height: 350px;
 }
 .anime3 p{
   font-size: 20px;
@@ -299,21 +316,85 @@ button:hover {
 }
 .historynime{
   display: flex;
+  justify-content: space-between;
   margin-left: 8.5rem;
   margin-right: 8.5rem;
 }
-.cardnime{
-  margin-right: 25px;
-}
+
 .cardnime img{
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
   width: 250px;
   height: 360px;
   border-radius: 15px;
 }
+.card
 .cardnime p{
   font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+/*Most Popular*/
+
+.populartext{
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+  padding: 50px;
+}
+.text-popular{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+.mostpopular{
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  justify-content: space-between;
+  display: flex;
+}
+.popularcard img{
+  object-fit: cover;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  transition: all ease-in-out 0.4s;
 }
 
+.popularcard img:hover{
+  width: 520px;
+  height: 320px;
+}
+
+.popularcard p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.mostpopular1{
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 2%;
+}
+.popularcard1 img{
+  object-fit: cover;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  transition: all ease-in-out 0.2s;
+}
+.popularcard1 img:hover{
+  width: 520px;
+  height: 320px;
+}
+.popularcard1 p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
 /*Footer*/
 
 footer {

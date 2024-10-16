@@ -251,6 +251,7 @@ nav .navbar .menu{
   margin-left: 6.5rem;
   margin-right: 6.2rem;
   display: flex;
+  justify-content: space-between;
   overflow-x: auto;
   gap: 4%;
 }
