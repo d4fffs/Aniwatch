@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background-color: #32353C;
+  }
+  nav{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background: #1E1F21;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   }
+   nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: #1E1F21;
+    margin: auto;
+   
+   }
+   nav .navbar .logo a img{
+     width: 250px;
+     height: 250px;
+     margin-top: 20px;
+   }
+   
+   nav .navbar .menu{
+     display: flex;
+     margin-left: 20px;
+     align-items: center;
+   }
+   .navbar .menu li{
+     list-style: none;
+     margin: 0 15px;
+   }
+   .navbar .menu li a{
+     color: #fff;
+     font-size: 20px;
+     font-weight: 500;
+     text-decoration: none;
+     transition: ease-in-out 0.4ms;
+   }
+   .navbar .menu li a:hover{
+     text-decoration: underline;
+     text-decoration-color: #4DE453;
+   }
+   
+   .navbar .menu .login{
+     display: flex;
+   }
+   .navbar .login li{
+     list-style: none;
+   }
+   
+   .menu #register-btn{
+     color: #000;
+     font-size: 15px;
+     font-weight: 500;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 25px;
+     padding-right: 25px;
+     text-decoration: none;
+     border-radius: 35px;
+     border-color: #4de453;
+     background-color: #4DE453;
+     transition: all 0.4ms;
+   }
+   
+   .menu #register-btn:hover{
+     color: #4DE453;
+     background-color: #000;
+     border-color: #4DE453;
+   }
+   
+
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #242527;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .poster {
+    width: 100%;
+    max-width: 390px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 34px;
+    border-radius: 10px;
+  }
+
+  .content {
+    overflow: hidden;
+  }
+  .content p{
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .genre{
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .rating, .status, .studio, .release-date {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .episodes {
+    margin: 20px 0;
+  }
+  .episodes h3{
+    font-size: 25px;
+  }
+
+  .episodes span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #D9D9D9;
+    margin: 5px;
+    border: solid #000 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+  }
+  .episodes span:hover{
+    background-color: #000;
+    color: #D9D9D9;
+  }
+
+  .rating {
+    font-size: 20px;
+  }
+
+  .buttons {
+    margin: 20px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .poster {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    
+    .episodes span {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+  }
+
+  footer {
+    background-color: #33B864;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 3%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+  
+  .footer-container img{
+    width: 150px;
+    height: 50px;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 15px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .sign-up-section button {
+    background-color: #4de453;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .sign-up-section #footerbtn:hover{
+    color: #4DE453;
+    background-color: #000;
+    border-color: #4DE453;
+  }
+  
+  .sign-up-section button:hover {
+    background-color: #3ac47d;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 20px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
+  .social-icons a {
+    margin-left: 10px;
+    color: #000;
+    font-size: 25spx;
+  }
