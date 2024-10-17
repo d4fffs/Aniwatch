@@ -145,6 +145,13 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  .rating i:hover ~ i::before{
+    color: yellow;
+  }
+  .rating i:hover::before{
+    color: yellow;
+  }
+
   .rating .star i{
     margin-top: 10px;
     font-size: 25px;
