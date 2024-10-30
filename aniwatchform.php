@@ -28,7 +28,7 @@
         <form action="aniwatchaction.php" enctype="multipart/form-data" method="POST">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
-            <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatch</h2>
+            <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatchp</h2>
             <h2 class="text-center mt-4 text-3xl font-semibold leading-10 text-green-500">Anime Input</h2>
 
             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
