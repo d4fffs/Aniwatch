@@ -25,14 +25,14 @@
     </style>
 <div class="container mx-auto">
     <div class="bg-black rounded-lg shadow-md p-6 my-28">
-        <form action="aniwatchaction.php" enctype="multipart/form-data" method="POST">
+        <form action="movieaction.php" enctype="multipart/form-data" method="POST">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
             <img src="assets/logo1.png" alt="" class="my-6">
 
             <div class="mt-16 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-4">
-                <label for="username" class="block text-xl font-bold leading-6 text-green-500">Nama Anime</label>
+                <label for="username" class="block text-xl font-bold leading-6 text-green-500">Nama Movie</label>
                 <div class="mt-4">
                     <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                     <input type="text" name="namaanime" id="username" autocomplete="username" class="block flex-1 rounded-md border-0 bg-transparent py-1.5 pl-1 text-black-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white" placeholder="Nama Anime" >
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="col-span-full">
-                <label for="cover-photo" class="block text-xl font-bold leading-9 text-green-500">Anime Poster</label>
+                <label for="cover-photo" class="block text-xl font-bold leading-9 text-green-500">Movie Poster</label>
                 <div class="mt-4 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10 bg-white">
                     <div class="text-center">
                     <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -71,11 +71,11 @@
 
             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-3">
-                <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Anime Studio</label>
+                <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Movie Studio</label>
                 <div class="mt-4">
                     <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     <div class="sm:col-span-3">
-                <label for="first-name" class="block text-xl mt-6 font-bold leading-6 text-green-500">Anime Episode</label>
+                <label for="first-name" class="block text-xl mt-6 font-bold leading-6 text-green-500">Movie Episode</label>
                 <div class="mt-4">
                     <input type="number" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     <div class="sm:col-span-3">
