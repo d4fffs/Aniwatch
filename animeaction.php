@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +31,18 @@
         echo "<p>Anime Studio: $animestudio</p>";
         echo "<p>Episode: $animeepisode</p>";
         echo "<p>Tanggal Rilis: $animerilis</p>";
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
         echo "<p>Genre: ";
         echo !empty($anime) ? implode(", ", $anime) : "Admin bingung genrenya apa nih";
         echo "</p>";
     }
     ?>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e

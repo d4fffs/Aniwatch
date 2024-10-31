@@ -7,15 +7,32 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
 <body class="bg-gray-900">
     <style>
         ::-webkit-scrollbar {
             overflow-y: hidden;
         }
     </style>
+<<<<<<< HEAD
     <div class="container mx-auto">
         <div class="bg-black rounded-lg shadow-md p-6 my-28">
+=======
+<div class="container mx-auto">
+    <div class="bg-black rounded-lg shadow-md p-6 my-28">
+<<<<<<< HEAD
+
+        <form action="animeaction.php" enctype="multipart/form-data" method="POST">
+=======
+        <form action="aniwatchaction.php" enctype="multipart/form-data" method="POST">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+        <div class="space-y-12">
+            <div class="border-b border-gray-900/10 pb-12">
+            <img src="assets/logo1.png" alt="" class="my-6">
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
 
 
 
@@ -77,16 +94,38 @@
 
                     <div class="border-b border-gray-900/10 pb-12">
 
+<<<<<<< HEAD
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div class="sm:col-span-3">
                                 <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Anime
                                     Studio</label>
                                 <div class="mt-4">
+=======
+                <div class="col-span-full">
+                <label for="cover-photo" class="block text-xl font-bold leading-9 text-green-500">Anime Poster</label>
+                <div class="mt-4 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10 bg-white">
+                    <div class="text-center">
+                    <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
+                    </svg>
+                    <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                        <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                        <span>Masukkan Foto</span>
+                        <input id="file-upload" name="fileupload" type="file" class="sr-only">
+                        </label>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
 
                                     <input type="text" name="animestudio" id="first-name" autocomplete="given-name"
                                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                     <div class="sm:col-span-3">
 
+<<<<<<< HEAD
 
                                         <div class="sm:col-span-3">
                                             <label for="first-name"
@@ -278,6 +317,191 @@
                                                             </div>
             </form>
         </div>
+=======
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Anime Studio</label>
+                <div class="mt-4">
+<<<<<<< HEAD
+                    <input type="text" name="animestudio" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <div class="sm:col-span-3">
+                <label for="first-name" class="block text-xl mt-6 font-bold leading-6 text-green-500">Anime Episode</label>
+                <div class="mt-4">
+                    <input type="number" name="animeepisode" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+=======
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    <div class="sm:col-span-3">
+                <label for="first-name" class="block text-xl mt-6 font-bold leading-6 text-green-500">Anime Episode</label>
+                <div class="mt-4">
+                    <input type="number" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <div class="sm:col-span-3">
+                    <label for="first-name" class="mt-6 block text-xl font-medium leading-6 text-green-500">Tanggal Rilis</label>
+                    <div class="mt-4">
+<<<<<<< HEAD
+                        <input type="date" name="animerilis" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+=======
+                        <input type="date" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                </div>
+            </div>
+        </div>
+            <div class="mt-10 space-y-10">
+                <fieldset>
+                <legend class="text-xl font-bold leading-6 text-green-500">Genre</legend>
+                <div class="mt-6 space-y-6">
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Action" class="font-medium text-white">Action</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="candidates" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="candidates" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Supernatural" class="font-medium text-white">Supernatural</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="offers" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="offers" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Shounen" class="font-medium text-white">Shounen</label>
+                    </div>
+                </div>
+                 <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Romance" class="font-medium text-white">Romance</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Sci-Fi" class="font-medium text-white">Sci-Fi</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Horror" class="font-medium text-white">Horror</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Fantasy" class="font-medium text-white">Fantasy</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Adventure" class="font-medium text-white">Adventure</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Comedy" class="font-medium text-white">Comedy</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Mystery" class="font-medium text-white">Mystery</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Drama" class="font-medium text-white">Drama</label>
+                    </div>
+                    </div>
+                    <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+<<<<<<< HEAD
+                        <input id="comments" name="anime[]" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+=======
+                        <input id="comments" name="anime" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+>>>>>>> b62c1d85cbfc5c78b5265026612d99fdf7330381
+                    </div>
+                    <div class="text-lg leading-6">
+                        <label for="Slice of Life" class="font-medium text-white">Slice of Life</label>
+                </div>
+            </div>
+            
+                
+        <div class="mt-6 items-end">
+            <button type="submit" name="submit" class="rounded-md bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+        </div>
+    </form>
+    </div>
+>>>>>>> b6ef9f07ed464f062fa2948cc3d365bd7614c19e
 
 
     </div>
