@@ -8,15 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <form action= "action.php" enctype="multipart/form-data" method="POST">
-    <!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniwatchInput</title>
-</head>
 <body class="bg-gray-900">
     <style>
        ::-webkit-scrollbar{
@@ -25,10 +16,10 @@
     </style>
 <div class="container mx-auto">
     <div class="bg-black rounded-lg shadow-md p-6 my-20">
-        <form action="aniwatchaction.php" enctype="multipart/form-data" method="POST">
+        <form action="animeaction.php" enctype="multipart/form-data" method="POST">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
-            <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatchp</h2>
+            <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatch</h2>
             <h2 class="text-center mt-4 text-3xl font-semibold leading-10 text-green-500">Anime Input</h2>
 
             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -36,7 +27,7 @@
                 <label for="username" class="block text-xl font-bold leading-6 text-green-500">Nama Anime</label>
                 <div class="mt-2">
                     <div class="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                    <input type="text" name="username" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-black-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white" placeholder="Nama Anime" >
+                    <input type="text" name="namaanime" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-black-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white" placeholder="Nama Anime" >
                     </div>
                 </div>
                 </div>
@@ -44,7 +35,7 @@
                 <div class="col-span-full">
                 <label for="about" class="block text-xl font-bold leading-6 text-green-500">Deskripsi</label>
                 <div class="mt-2">
-                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                    <textarea id="about" name="deskripsi" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                 </div>
                 <p class="mt-3 text-lg leading-6 text-white">Masukkan deskripsi singkat tentang anime yang dimasukkan.</p>
                 </div>
@@ -59,7 +50,7 @@
                     <div class="mt-4 flex text-sm leading-6 text-gray-600">
                         <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                         <span>Masukkan Foto</span>
-                        <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                        <input id="file-upload" name="fileupload" type="file" class="sr-only">
                         </label>
                     </div>
                     </div>
@@ -74,11 +65,15 @@
                 <div class="sm:col-span-3">
                 <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Anime Studio</label>
                 <div class="mt-2">
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    <div class="sm:col-span-3">
+                    <input type="text" name="animestudio" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <div class="sm:col-span-3 mt-6">
+                <label for="first-name" class="block text-xl font-bold leading-6 text-green-500">Anime Episode</label>
+                <div class="mt-2">
+                    <input type="number" name="animeepisode" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    <div class="sm:col-span-3 mt-6">
                     <label for="first-name" class="mt-6 block text-xl font-medium leading-6 text-green-500">Tanggal Rilis</label>
                     <div class="mt-2">
-                        <input type="date" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <input type="date" name="animerilis" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
         </div>
