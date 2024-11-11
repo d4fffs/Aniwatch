@@ -1,3 +1,7 @@
+<?php
+require_once "config/config.php";
+require_once "data.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +20,7 @@
     </style>
 <div class="container mx-auto">
     <div class="bg-black rounded-lg shadow-md p-6 my-20">
-        <form action="animeaction.php" enctype="multipart/form-data" method="POST">
+        <form action="" enctype="multipart/form-data" method="POST">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
             <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatch</h2>
