@@ -27,7 +27,7 @@
                 <label for="username" class="block text-xl font-bold leading-6 text-green-500">Nama Anime</label>
                 <div class="mt-2">
                     <div class="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                    <input type="text" name="namaanime" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-black-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white" placeholder="Nama Anime" >
+                    <input type="text" name="namaanime" id="username" autocomplete="username" class="block rounded-md flex-1 border-0 bg-transparent py-1.5 pl-1 text-black-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 bg-white" placeholder="Nama Anime" >
                     </div>
                 </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="mt-4 flex text-sm leading-6 text-gray-600">
                         <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                         <span>Masukkan Foto</span>
-                        <input id="file-upload" name="fileupload" type="file" class="sr-only">
+                        <input id="file-upload" name="file" type="file" class="sr-only">
                         </label>
                     </div>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="mt-6 space-y-6">
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Action" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Action</label>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="candidates" name="anime[]" type="checkbox" value="Supernatural" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="candidates" class="font-medium text-white">Supernatural</label>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="offers" name="offers" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="offers" name="anime[]" type="checkbox" value="Shounen" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="offers" class="font-medium text-white">Shounen</label>
@@ -107,7 +107,7 @@
                 </div>
                  <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Romance" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Romance</label>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Sci-Fi" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Sci-Fi</label>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Horror" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Horror</label>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Fantasy" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Fantasy</label>
@@ -139,7 +139,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Adventure" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Adventure</label>
@@ -147,7 +147,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Comedy" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Comedy</label>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Mystery" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Mystery</label>
@@ -163,7 +163,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Drama" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Drama</label>
@@ -171,7 +171,7 @@
                     </div>
                     <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                        <input id="comments" name="anime[]" type="checkbox" value="Slice of Life" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
                     </div>
                     <div class="text-lg leading-6">
                         <label for="comments" class="font-medium text-white">Slice of Life</label>
@@ -180,7 +180,7 @@
             
                 
         <div class="mt-6 items-end">
-            <button type="submit" class="rounded-md bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+            <button type="submit" name="submit" class="rounded-md bg-indigo-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
         </div>
     </form>
     </div>
@@ -190,6 +190,8 @@
 </body>
 </html>
     </form>
+    
+
 </body>
 
 </html>
