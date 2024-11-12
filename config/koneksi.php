@@ -1,4 +1,6 @@
 <?php
+    $rootDir = $_SERVER['DOCUMENT_ROOT'].'/Aniwatch/';
+    
     $server = "localhost"; 
     $user = "root";
     $pass = '';
