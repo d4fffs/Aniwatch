@@ -38,7 +38,7 @@ function validasiData($data)  {
     }
     
 function viewAnime($koneksi){
-    $sql = "SELECT FROM * anime";
+    $sql = "SELECT anime_nama, anime_genre, anime_poster, anime_sinopsis, anime_studio, anime_episode, tanggal_rilis FROM `anime`";
 
     $stmt = mysqli_query($koneksi, $sql);
 

@@ -19,7 +19,7 @@ require_once "config/config.php";
     </style>
 <div class="container mx-auto">
     <div class="bg-black rounded-lg shadow-md p-6 my-20">
-        <form action="" enctype="multipart/form-data" method="POST">
+        <form action="producttable.php" enctype="multipart/form-data" method="POST">
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
             <h2 class="text-center mt-5 text-6xl font-bold leading-7 text-green-500">Aniwatch</h2>
