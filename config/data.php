@@ -13,6 +13,7 @@ if(isset($_POST['submit'])){
   
       // variabel array associative 
       $data = [ 
+          'animeid'=> $animeid,
           'namaanime' => $namaanime,
           'deskripsi' => $deskripsi,
           'file' => $file,
