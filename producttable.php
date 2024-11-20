@@ -56,7 +56,7 @@ if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
 
                 <tbody>
                     <tr class="bg-white">
-                        <td class="border border-gray-300 px-6 py-2"><input type="checkbox" name="selected_id[]"></td>
+                        <td class="border border-gray-300 px-6 py-2"><input type="checkbox" name="selected_id[]" value="<?= $data['anime_id'] ?>"></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $no ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_id'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_nama'] ?></td>
