@@ -3,6 +3,7 @@ $rootDir = $_SERVER['DOCUMENT_ROOT'].'/Aniwatch/';
 if(isset($_POST['submit'])){
 
       // mengambil semua data dari form ke dalam variabel lokal
+      $animeid = $_POST['animeid'];
       $namaanime = $_POST['namaanime'];
       $deskripsi = $_POST['deskripsi'];
       $animestudio = $_POST['animestudio'];
@@ -13,7 +14,7 @@ if(isset($_POST['submit'])){
   
       // variabel array associative 
       $data = [ 
-          'animeid'=> $animeid,
+          'animeid' => $animeid,
           'namaanime' => $namaanime,
           'deskripsi' => $deskripsi,
           'file' => $file,

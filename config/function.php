@@ -11,6 +11,7 @@ function validasiData($data)  {
 }
 
     function inputAnimeGambar($data, $koneksi){  
+       $animeid = $data['animeid'];
        $namaanime = $data['namaanime'];
        $anime = $data['anime'];
        $deskripsi = $data['deskripsi'];
@@ -20,14 +21,14 @@ function validasiData($data)  {
        $animerilis = $data['animerilis'];
        
     
-        $sql = "INSERT INTO anime (anime_nama, anime_genre, anime_poster, anime_sinopsis, anime_studio, anime_episode, tanggal_rilis) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO anime (anime_id, anime_nama, anime_genre, anime_poster, anime_sinopsis, anime_studio, anime_episode, tanggal_rilis) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($koneksi, $sql);
         if($stmt === false) 
         {
             return "failed";
         }
     
-        mysqli_stmt_bind_param($stmt, 'sssssii', $namaanime,  $anime, $file, $deskripsi, $animestudio, $animeepisode, $animerilis);
+        mysqli_stmt_bind_param($stmt, 'isssssii',$animeid, $namaanime,  $anime, $file, $deskripsi, $animestudio, $animeepisode, $animerilis);
         $result = mysqli_stmt_execute($stmt);
     
         if(!$result)
