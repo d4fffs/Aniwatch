@@ -2,8 +2,8 @@
 require "config/config.php";
 
 if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
-    foreach ($_POST["selected_id"] as $select_id) {
-        $delete = "DELETE FROM anime WHERE anime.anime_id= $select_id";
+    foreach ($_POST["selected_id"] as $id) {
+        $delete = "DELETE FROM anime WHERE anime.anime_id= $id";
         mysqli_query($koneksi,  $delete);
         break;
     }
@@ -38,6 +38,7 @@ if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
                         <tr class="bg-gray-200">
                             <th class="border border-gray-300 px-4 py-2">Pilih</th>
                             <th class="border border-gray-300 px-4 py-2">No</th>
+                            <th class="border border-gray-300 px-4 py-2">Id</th>
                             <th class="border border-gray-300 px-4 py-2">Anime</th>
                             <th class="border border-gray-300 px-4 py-2">Genre</th>
                             <th class="border border-gray-300 px-4 py-2">Poster</th>
@@ -55,8 +56,9 @@ if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
 
                 <tbody>
                     <tr class="bg-white">
-                        <td class="border border-gray-300 px-6 py-2"><input type="checkbox" name="selected_id[]" value="<?= $data['anime_id']?>"></td>
+                        <td class="border border-gray-300 px-6 py-2"><input type="checkbox" name="selected_id[]"></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $no ?></td>
+                        <td class="border border-gray-300 px-6 py-2"><?= $data['anime_id'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_nama'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_genre'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_poster'] ?></td>
