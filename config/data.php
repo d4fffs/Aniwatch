@@ -2,7 +2,7 @@
 $rootDir = $_SERVER['DOCUMENT_ROOT'].'/Aniwatch/';
 if(isset($_POST['submit'])){
 
-      // mengambil semua data dari form ke dalam variabel lokal
+      
       $animeid = $_POST['animeid'];
       $namaanime = $_POST['namaanime'];
       $deskripsi = $_POST['deskripsi'];
@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
       $anime = implode(',',$_POST['anime']);  
       $file = basename($_FILES['file']['name']);
   
-      // variabel array associative 
+     
       $data = [ 
           'animeid' => $animeid,
           'namaanime' => $namaanime,
@@ -24,12 +24,11 @@ if(isset($_POST['submit'])){
           'anime' => $anime,
       ];
   
-      // var_dump($data);
-  
+      
       $validasi = validasiData($data);
   
       if($validasi == 0 ){
-          // echo "data sudah lengkap siap di inputkan";
+          
           $result = inputAnimeGambar($data, $koneksi);
           $folderTujuan = $rootDir."upload";
           if($result) 
