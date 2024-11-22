@@ -47,6 +47,16 @@ function viewAnime($koneksi){
     else return false; 
 }
     
+function delAnime($koneksi, $id){
+    $sql = "DELETE FROM anime WHERE anime_id = ?";
+    $stmt = mysqli_prepare($koneksi, $sql);
+
+    mysqli_stmt_bind_param($stmt, "i", $id);
+    $result = mysqli_stmt_execute($stmt);
+
+    if($result) return true;
+    else return false; 
+}
 
 
 ?>

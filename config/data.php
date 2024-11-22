@@ -47,7 +47,20 @@ if(isset($_POST['submit'])){
       }
   }
 
+  else if(isset($_GET['del'])){
+    $id = $_GET['del'] ?? null;
 
+    if($id === null || !ctype_digit($id)){
+        header("location:producttable.php?errno=3");
+    }
+    else {
+        $result = delAnime($koneksi, $id);
+        if($result) 
+            header("location:producttable.php?success=1");
+        else 
+            header("location:producttable.php?errno=5");
+    }
+}
         
 
         
