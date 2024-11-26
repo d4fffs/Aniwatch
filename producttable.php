@@ -60,12 +60,12 @@ if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
                         <td class="border border-gray-300 px-6 py-2"><?= $no ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_nama'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_genre'] ?></td>
-                        <td class="border border-gray-300 px-6 py-2"><?= $data['anime_poster'] ?></td>
+                        <td class="px-6 py-4 text-sm text-gray-500"> <img src="../upload/<?= $data['anime_poster'] ?>" /></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_sinopsis'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_episode'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['anime_studio'] ?></td>
                         <td class="border border-gray-300 px-6 py-2"><?= $data['tanggal_rilis'] ?></td>
-                        <td class="border border-gray-300 px-6 py-2 hover:underline text-green-500">Edit</td>
+                        <td class="border border-gray-300 px-6 py-2 hover:underline text-red-500">Edit</td>
                         <td class="border border-gray-300 px-6 py-2 hover:underline text-red-500"><a href="?del=<?=$data['anime_id']?>">Delete</a></td>
                     </tr>
                 <?php

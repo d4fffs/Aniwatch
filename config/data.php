@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
       $validasi = validasiData($data);
   
       if($validasi == 0 ){
-          
+          // echo "data sudah lengkap siap di inputkan";
           $result = inputAnimeGambar($data, $koneksi);
           $folderTujuan = $rootDir."upload";
           if($result) 
